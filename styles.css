@@ -1,17 +1,10 @@
-selector {
-
-	property: value;
-
-}
-
-body {
+body{
 
 	font-family: Arial, sans-serif;
-
 	background-color: #cd7f32;
 	margin: 0;
 	padding: 0;
-
+	
 	line-height: 1.6;
 }
 
@@ -23,13 +16,11 @@ header {
 
 	padding: 50px;
 
-	align: center;
+	text-align: center;
 
 }
 
 header h1 {
-	align: right;
-
 	margin: 0;
 
 }
@@ -79,6 +70,7 @@ footer {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
+}
 	p {
 
 font-size: 1.1em;
