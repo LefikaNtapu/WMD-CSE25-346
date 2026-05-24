@@ -91,10 +91,10 @@ text-decoration: underline;
 
 }
 img {
+	width:100%;
+	border: 5px solid #000000;
 
-border: 5px solid #000000;
-
-border-radius: 10px;
+	border-radius: 10px;
 
 }
 main a[href^="mailto:"] {
