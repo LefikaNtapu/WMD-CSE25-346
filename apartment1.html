@@ -70,13 +70,29 @@
         <div class="row">
 
             <!-- Image -->
-            <section class="col-md-6">
+           <section class="apartment-gallery" aria-label="Apartment image gallery">
 
-                <img id="apartment-image"
-                     class="img-fluid rounded shadow"
-                     alt="Apartment Image">
+    <figure>
+        <img id="main-image"
+             src="images/apartment1.jpg"
+             alt="Living room of 1 Bedroom Apartment">
 
-            </section>
+        <figcaption id="image-caption">
+            Living Room
+        </figcaption>
+    </figure>
+
+    <nav class="gallery-controls" aria-label="Gallery controls">
+        <button type="button" onclick="previousImage()">
+            Previous
+        </button>
+
+        <button type="button" onclick="nextImage()">
+            Next
+        </button>
+    </nav>
+
+</section>
 
             <!-- Details -->
             <section class="col-md-6">
