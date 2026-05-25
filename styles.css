@@ -103,6 +103,37 @@ color: #ff5722;
 font-weight: bold;
 
 }
+
+
+.apartment-gallery {
+    max-width: 500px;
+    margin: auto;
+}
+
+#main-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallery-controls {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.gallery-controls button {
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+
+
+
+
+
+
+
 .contact-content {
     max-width: 700px;
     margin: auto;
