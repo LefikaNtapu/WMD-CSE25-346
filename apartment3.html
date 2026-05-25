@@ -75,7 +75,7 @@
 
     <figure>
         <img id="main-image"
-             src="images/apartment1.jpg"
+             src="images/apartment3.jpg"
              alt="Living room of 1 Bedroom Apartment">
 
         <figcaption id="image-caption">
@@ -136,7 +136,7 @@
     {
         src: "images/outdoors.jpg",
         alt: "Outdoor parking",
-        caption: " Parking area"
+        caption: "Parking area"
     },
          {
         src: "images/outdoor-pool.jpg",
@@ -153,7 +153,7 @@
    {
         src: "images/apartment34.jpg",
         alt: "bedroom",
-        caption: "Bedroom"
+        caption: "Master Bedroom"
     },
         {
         src: "images/apartment33.jpeg",
@@ -237,8 +237,7 @@ function previousImage() {
         document.getElementById("apartment-description").textContent =
             apartment.description;
 
-        document.getElementById("apartment-image").src =
-            apartment.image;
+
 
         // Features List
         const featuresList =
@@ -251,7 +250,7 @@ function previousImage() {
             li.textContent = feature;
 
             featuresList.appendChild(li);
-
+        showImage(currentImage);
         });
 
     </script>
