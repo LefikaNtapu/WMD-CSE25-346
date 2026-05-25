@@ -119,9 +119,67 @@
 
     </main>
 
+  
+    
+    
+    
     <!-- JavaScript -->
     <script>
+    const images = [
+    {
+        src: "images/Bedroom-picture.jpeg",
+        alt: "Bedroom",
+        caption: "Bedroom"
+    },
+    {
+        src: "images/Kitchen-picture.jpeg",
+        alt: "Kitchen",
+        caption: "Kitchen"
+    },
+    {
+        src: "images/Sitting-room.jpeg",
+        alt: "Sitting room",
+        caption: "Sitting room"
+    },
+    {
+        src: "images/bathroom-picture.jpeg",
+        alt: "Bathroom",
+        caption: "Bathroom"
+    }
+];
 
+let currentImage = 0;
+
+const mainImage = document.getElementById("main-image");
+const imageCaption = document.getElementById("image-caption");
+
+function showImage(index) {
+    mainImage.src = images[index].src;
+    mainImage.alt = images[index].alt;
+    imageCaption.textContent = images[index].caption;
+}
+
+function nextImage() {
+    currentImage++;
+
+    if (currentImage >= images.length) {
+        currentImage = 0;
+    }
+
+    showImage(currentImage);
+}
+
+function previousImage() {
+    currentImage--;
+
+    if (currentImage < 0) {
+        currentImage = images.length - 1;
+    }
+
+    showImage(currentImage);
+}
+  
+        
         // Apartment Data
         const apartment = {
 
