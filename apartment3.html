@@ -121,7 +121,71 @@
 
     <!-- JavaScript -->
     <script>
+     const images = [
+    {
+        src: "images/sitting2.jpg",
+        alt: "Living room",
+        caption: "Living room"
+    },
+    
+    {
+        src: "images/balcony.jpeg",
+        alt: "Balcony",
+        caption: "Balcony"
+    },
+    {
+        src: "images/bedroom2.jpg",
+        alt: "Bedroom",
+        caption: " Master Bedroom"
+    },
+    {
+        src: "images/bedroom3.jpg",
+        alt: "bedroom",
+        caption: "Bedroom"
+    },
+        {
+        src: "images/kitchen.jpeg",
+        alt: "Kitchen",
+        caption: "Kitchen"
+    },
+        {
+        src: "images/bathroom.jpeg",
+        alt: "Bathroom",
+        caption: "Bathroom"
+    }
+];
 
+let currentImage = 0;
+
+const mainImage = document.getElementById("main-image");
+const imageCaption = document.getElementById("image-caption");
+
+function showImage(index) {
+    mainImage.src = images[index].src;
+    mainImage.alt = images[index].alt;
+    imageCaption.textContent = images[index].caption;
+}
+
+function nextImage() {
+    currentImage++;
+
+    if (currentImage >= images.length) {
+        currentImage = 0;
+    }
+
+    showImage(currentImage);
+}
+
+function previousImage() {
+    currentImage--;
+
+    if (currentImage < 0) {
+        currentImage = images.length - 1;
+    }
+
+    showImage(currentImage);
+}
+  
         // Apartment Data
         const apartment = {
 
@@ -132,7 +196,7 @@
             image: "images/apartment1.jpg",
 
             description:
-                "Modern 1 bedroom apartment located near schools, shopping centers, and transport routes.",
+                "Modern 3 bedroom apartment located near schools, shopping centers, and transport routes with 3 allocated parking spots.",
 
             features: [
                 "Free Wi-Fi",
