@@ -131,7 +131,19 @@ font-weight: bold;
 
 
 
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
 
+.card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
 
 
 
