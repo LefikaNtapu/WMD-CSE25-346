@@ -129,37 +129,6 @@ font-weight: bold;
     margin: 5px;
 }
 
-.apartment-card {
-    border-radius: 20px;
-    overflow: hidden;
-    transition: 0.3s;
-}
-
-.apartment-card:hover {
-    transform: scale(1.03);
-}
-
-.apartment-image {
-    height: 350px;
-    object-fit: cover;
-}
-
-.card-body {
-    padding: 25px;
-}
-
-.card-title {
-    font-size: 2rem;
-    margin-bottom: 15px;
-}
-
-.card-text {
-    margin-bottom: 25px;
-}
-
-.btn {
-    width: 100%;
-}
 
 
 
